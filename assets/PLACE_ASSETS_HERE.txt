@@ -1,0 +1,8 @@
+Place your assets in this folder:
+
+- photo.jpg       → Your profile photo
+- resume.pdf      → Your resume/CV
+- project1.jpg    → Screenshot of project 1
+- project2.jpg    → Screenshot of project 2
+- project3.jpg    → Screenshot of project 3
+- project4.jpg    → Screenshot of project 4

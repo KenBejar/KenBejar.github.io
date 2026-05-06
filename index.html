@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>Kenneth Bejar<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <!-- <li><a href="#skills">Skills</a></li> -->
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <!-- <li><a href="#skills" class="mobile-link">Skills</a></li> -->
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-text">WEB DEV</div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">Available for work</div>
+      <h1 class="hero-title reveal">
+        <span class="line">Hi, I'm</span>
+        <span class="line name-line">Kenneth<span class="accent-dot">.</span></span>
+        <span class="line sub-line">Web Developer</span>
+      </h1>
+      <p class="hero-desc reveal">
+        I craft fast, beautiful, and purposeful web experiences — from pixel-perfect UIs to robust full-stack apps.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label">01 — About</div>
+      <div class="about-grid">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <img src="assets/images/kenbejar.jpg" alt="kenbejar" />
+          </div>
+          <div class="about-img-border"></div>
+        </div>
+        <div class="about-text">
+          <h2 class="section-title">A developer who loves <em>clean code</em> and thoughtful design.</h2>
+          <p>
+            I'm a web developer based in the Philippines, passionate about turning complex problems into elegant, user-friendly solutions. With a keen eye for design and a love for writing maintainable code, I bridge the gap between beautiful UI and solid engineering.
+          </p>
+          <p>
+            When I'm not coding, you'll find me exploring new tech, contributing to open source, or drinking too much coffee.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">10+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">9+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projects</div>
+      <h2 class="section-title">Websites I've <em>built</em></h2>
+      <p class="projects-intro">A collection of recruitment &amp; HR industry websites I designed and developed for clients in the Philippines and Indonesia.</p>
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- 01 Asia Peopleworks -->
+        <article class="project-card" data-index="0">
+          <div class="project-img">
+            <img
+              src="assets/images/apw.PNG"
+              alt="Asia Peopleworks Inc."
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="project-img-placeholder" style="display:none;">asiapeopleworks.com.ph</div>
+            <div class="project-overlay">
+              <a href="https://asiapeopleworks.com.ph/" target="_blank" rel="noopener" class="project-link">Live Site ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">01</div>
+            <h3 class="project-name">Asia Peopleworks Inc.</h3>
+            <p class="project-desc">Corporate website for a leading Philippine outsourced staffing solutions provider. Features service showcases, job listings, and a client-focused design that builds trust at first glance.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Staffing</span>
+              <span class="tag">Philippines</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Asia Select PH -->
+        <article class="project-card" data-index="1">
+          <div class="project-img">
+            <img
+              src="assets/images/asiph.PNG"
+              alt="Asia Select Philippines"
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="project-img-placeholder" style="display:none;">asiaselect.ph</div>
+            <div class="project-overlay">
+              <a href="https://asiaselect.ph/" target="_blank" rel="noopener" class="project-link">Live Site ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">02</div>
+            <h3 class="project-name">Asia Select Philippines</h3>
+            <p class="project-desc">Recruitment website for a top headhunting and executive search firm in Manila. Highlights their cybersecurity talent specialization and trusted partnership with NCC Group.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">Executive Search</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 Asia Select Indonesia -->
+        <article class="project-card" data-index="2">
+          <div class="project-img">
+            <img
+              src="assets/images/asiindo.PNG"
+              alt="Asia Select Indonesia"
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="project-img-placeholder" style="display:none;">asiaselect.co.id</div>
+            <div class="project-overlay">
+              <a href="https://asiaselect.co.id/" target="_blank" rel="noopener" class="project-link">Live Site ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">03</div>
+            <h3 class="project-name">Asia Select Indonesia</h3>
+            <p class="project-desc">HR solutions website for Asia Select's Indonesia branch — localized for the Indonesian market with a clean, professional layout tailored to the local recruitment industry.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">Indonesia</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Asia People Search -->
+        <article class="project-card" data-index="3">
+          <div class="project-img">
+            <img
+              src="assets/images/aps.PNG"
+              alt="Asia People Search"
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="project-img-placeholder" style="display:none;">asiapeoplesearch.com.ph</div>
+            <div class="project-overlay">
+              <a href="https://asiapeoplesearch.com.ph/" target="_blank" rel="noopener" class="project-link">Live Site ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">04</div>
+            <h3 class="project-name">Asia People Search</h3>
+            <p class="project-desc">Expert recruitment solutions website covering executive search, mid-level, and volume hiring in the Philippines. Clean, conversion-focused design built on Elementor.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">Recruitment</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 APW Tech -->
+        <article class="project-card" data-index="4">
+          <div class="project-img">
+            <img
+              src="assets/images/apwtech.PNG"
+              alt="APW Tech"
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="project-img-placeholder" style="display:none;">apwtech.com.ph</div>
+            <div class="project-overlay">
+              <a href="https://apwtech.com.ph/" target="_blank" rel="noopener" class="project-link">Live Site ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">05</div>
+            <h3 class="project-name">APW Tech</h3>
+            <p class="project-desc">Technology arm website of the Asia Peopleworks group. Focused on showcasing tech-driven HR and staffing solutions for businesses in the Philippines.</p>
+            <div class="project-tags">
+              <span class="tag">Web Design</span>
+              <span class="tag">HR Tech</span>
+              <span class="tag">Philippines</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 EPEEQ Law -->
+        <article class="project-card" data-index="5">
+          <div class="project-img">
+            <img
+              src="assets/images/epeeqlaw.PNG"
+              alt="EPEEQ Law"
+              loading="lazy"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="project-img-placeholder" style="display:none;">epeeqlaw.com</div>
+            <div class="project-overlay">
+              <a href="https://epeeqlaw.com/" target="_blank" rel="noopener" class="project-link">Live Site ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-num">06</div>
+            <h3 class="project-name">EPEEQ Law</h3>
+            <p class="project-desc">Full-service law firm website for EPEEQ Law in the Philippines. Delivers a professional, trust-building online presence for business and individual legal services.</p>
+            <div class="project-tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">Elementor</span>
+              <span class="tag">Law Firm</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <!-- <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label">03 — Skills</div>
+      <h2 class="section-title">My <em>toolkit</em></h2>
+      <div class="skills-layout">
+        <div class="skills-col">
+          <h3 class="skills-group-title">Frontend</h3>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-bar" style="--pct:90%"></span><span class="skill-name">HTML / CSS</span><span class="skill-pct">90%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:85%"></span><span class="skill-name">JavaScript / ES6+</span><span class="skill-pct">85%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:80%"></span><span class="skill-name">React / Next.js</span><span class="skill-pct">80%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:75%"></span><span class="skill-name">Vue.js</span><span class="skill-pct">75%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:80%"></span><span class="skill-name">Tailwind CSS</span><span class="skill-pct">80%</span></li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <h3 class="skills-group-title">Backend</h3>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-bar" style="--pct:78%"></span><span class="skill-name">Node.js / Express</span><span class="skill-pct">78%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:70%"></span><span class="skill-name">PHP / Laravel</span><span class="skill-pct">70%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:72%"></span><span class="skill-name">PostgreSQL / MySQL</span><span class="skill-pct">72%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:68%"></span><span class="skill-name">MongoDB</span><span class="skill-pct">68%</span></li>
+            <li class="skill-item"><span class="skill-bar" style="--pct:65%"></span><span class="skill-name">REST APIs / GraphQL</span><span class="skill-pct">65%</span></li>
+          </ul>
+        </div>
+        <div class="skills-col">
+          <h3 class="skills-group-title">Tools</h3>
+          <div class="tools-grid">
+            <span class="tool-badge">Git</span>
+            <span class="tool-badge">GitHub</span>
+            <span class="tool-badge">VS Code</span>
+            <span class="tool-badge">Figma</span>
+            <span class="tool-badge">Docker</span>
+            <span class="tool-badge">Vercel</span>
+            <span class="tool-badge">Netlify</span>
+            <span class="tool-badge">AWS</span>
+            <span class="tool-badge">Linux</span>
+            <span class="tool-badge">Webpack</span>
+            <span class="tool-badge">Vite</span>
+            <span class="tool-badge">Jest</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label">04 — Contact</div>
+      <div class="contact-layout">
+        <div class="contact-left">
+          <h2 class="section-title">Let's build something <em>together.</em></h2>
+          <p class="contact-desc">
+            I'm currently open to freelance projects and full-time opportunities. Whether you have a project in mind or just want to say hello — my inbox is always open.
+          </p>
+          <a href="mailto:your@email.com" class="contact-email">kenbejar@gmail.com ↗</a>
+          <div class="social-links">
+            <a href="https://github.com/KenBejar" target="_blank" rel="noopener" class="social-link">GitHub</a>
+            <a href="https://linkedin.com/in/kenneth-bejar" target="_blank" rel="noopener" class="social-link">LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqenblgo" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-logo"><span class="logo-bracket">&lt;</span>Kenneth Bejar<span class="logo-bracket">/&gt;</span></span>
+      <span class="footer-copy">© <span id="year"></span> · Designed & Built by Kenneth</span>
+      <a href="#home" class="footer-top">Back to Top ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
